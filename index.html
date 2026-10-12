@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhumika Arora | AI/ML Student, Developer & Writer</title>
+  <meta name="description" content="Portfolio of Bhumika Arora, a 3rd-year CSE (AI & ML) student at Symbiosis Institute of Technology, Nagpur. Developer, debater, writer.">
+  <meta name="theme-color" content="#dcecfb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%238ec5f5'/%3E%3Ctext x='50' y='66' font-size='54' text-anchor='middle' font-family='Georgia,serif' font-weight='700' fill='white'%3EB%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    /* Set the theme before first paint so there is no flash */
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6.5L21 7"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  </svg>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Bhumika Arora, back to top">
+      <span class="brand-mark">B</span><span class="brand-name">Bhumika Arora</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#writing">Writing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Light / dark">
+        <svg class="ic ic-moon"><use href="#i-moon"/></svg>
+        <svg class="ic ic-sun"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="blob b1" data-depth="26"></div>
+      <div class="blob b2" data-depth="-34"></div>
+      <div class="blob b3" data-depth="18"></div>
+
+      <div class="hero-text">
+        <p class="eyebrow reveal">Hello, I'm</p>
+        <h1 class="reveal">Bhumika <span class="grad">Arora</span></h1>
+        <p class="typed-line reveal" aria-live="polite">
+          <span class="typed-prefix">I'm a </span><span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="lede reveal">
+          3rd-year CSE student, specialising in AI &amp; ML at Symbiosis Institute of Technology, Nagpur.
+          I build things with code, argue things on stage and write things at midnight.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn primary magnetic" href="#projects">See my work <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn ghost magnetic" href="#contact">Say hello</a>
+        </div>
+        <ul class="socials reveal" aria-label="Social links">
+          <li><a class="social" href="https://github.com/bhumikaarorasit24" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+          <li><a class="social" href="https://www.linkedin.com/in/bhumika-arora-0b7978320/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a></li>
+          <li><a class="social" href="https://www.instagram.com/secondlastdraft/" target="_blank" rel="noopener" aria-label="Instagram: secondlastdraft"><svg class="ic"><use href="#i-instagram"/></svg></a></li>
+          <li><a class="social" href="mailto:abhumika24@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="portrait" data-tilt>
+          <img src="assets/img/hero.jpg" alt="Bhumika on stage with a microphone, arms open wide, in front of a blue velvet curtain" width="1100" height="1100" fetchpriority="high">
+        </div>
+        <span class="chip c1">AI / ML</span>
+        <span class="chip c2">Writer ✎</span>
+        <span class="chip c3">Debater</span>
+        <span class="chip c4">Lead Dev Intern</span>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Highlights">
+      <div class="stat" data-tilt><b class="count" data-count="1">0</b><span>Indian patent filed</span></div>
+      <div class="stat" data-tilt><b><span class="pre">AIR </span><span class="count" data-count="17">0</span></b><span>National French Olympiad</span></div>
+      <div class="stat" data-tilt><b><span class="count" data-count="300">0</span>+</b><span>batch, top in Group Discussion &amp; Communication</span></div>
+      <div class="stat" data-tilt><b><span class="count" data-count="4">0</span> yrs</b><span>of Kathak training</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo reveal">
+          <div class="photo-frame">
+            <img src="assets/img/icsit.jpg" alt="Bhumika smiling in a navy blazer at the ICSIT 2026 conference backdrop, wearing a Student Ambassador badge" width="1200" height="1600" loading="lazy">
+          </div>
+          <span class="scribble">hi there!</span>
+        </div>
+        <div class="about-copy">
+          <p class="kicker reveal">About me</p>
+          <h2 class="reveal">Curious engineer, <em>stubborn storyteller.</em></h2>
+          <p class="reveal">
+            I'm an aspiring computer science engineer with a focus on AI &amp; ML, keen to learn and grow in the field.
+            I like problems that need both logic and clear communication, which is probably why I keep ending up
+            in the middle of teams, projects and microphones.
+          </p>
+          <p class="reveal">
+            On the technical side I've worked with Python, C, Java and JavaScript, and I've done team research on
+            optimising GaN HEMTs with AI techniques, which led to a filed Indian patent. Off the screen I lead
+            student communication and literary initiatives, debate, write, and dance Kathak.
+          </p>
+          <ul class="facts reveal">
+            <li><span>Studying</span> B.Tech CSE · AI &amp; ML · 3rd year</li>
+            <li><span>At</span> Symbiosis Institute of Technology, Nagpur</li>
+            <li><span>Currently</span> Lead, Communication &amp; Media Cell (SRC)</li>
+            <li><span>On the side</span> Writing my first book ✎</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section alt" id="journey">
+      <div class="wrap">
+        <p class="kicker reveal">Journey</p>
+        <h2 class="reveal">Experience &amp; <em>leadership</em></h2>
+
+        <ol class="timeline">
+          <li class="t-item reveal">
+            <span class="t-date">2026</span>
+            <div class="t-card">
+              <h3>Lead Software Dev Intern</h3>
+              <p class="t-org">Centelli Pvt Ltd · 6-week offline internship</p>
+              <p>Spent six weeks on-site at an AI automation company that builds business solutions, working as the lead software dev intern.</p>
+              <span class="tag">Software</span><span class="tag">AI automation</span>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <span class="t-date">2026&ndash;27</span>
+            <div class="t-card">
+              <h3>Lead, Communication &amp; Media Cell</h3>
+              <p class="t-org">Student Representative Council · SIT Nagpur</p>
+              <p>Leading literary initiatives, debates and communication-driven events across college.</p>
+              <span class="tag">Leadership</span><span class="tag">Events</span>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <span class="t-date">Jun 2026</span>
+            <div class="t-card">
+              <h3>Student Coordinator, <em>Lit-era-cy</em></h3>
+              <p class="t-org">World Literacy Day · Communication &amp; Media Cell</p>
+              <p>Co-coordinated "Writing My Next Era", a space to pause, put pen to paper and write the next chapter of you.</p>
+              <span class="tag">Writing</span><span class="tag">Community</span>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <span class="t-date">2026</span>
+            <div class="t-card">
+              <h3>Student Ambassador</h3>
+              <p class="t-org">ICSIT 2026 · International Conference on Sustainability, Innovation &amp; Technology</p>
+              <p>Represented SIT Nagpur as a Student Ambassador at the conference.</p>
+              <span class="tag">Conference</span><span class="tag">Representation</span>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <span class="t-date">2025&ndash;26</span>
+            <div class="t-card">
+              <h3>Vice President, Literary Club</h3>
+              <p class="t-org">Student Representative Council · SIT Nagpur</p>
+              <p>Led literary initiatives and debates for the college community.</p>
+              <span class="tag">Leadership</span><span class="tag">Debate</span>
+            </div>
+          </li>
+          <li class="t-item reveal">
+            <span class="t-date">On stage</span>
+            <div class="t-card">
+              <h3>Debate &amp; Public Speaking</h3>
+              <p class="t-org">INFACTO: Order &amp; Chaos · IIIT Nagpur, and more</p>
+              <p>Represented college in inter-institutional debates including INFACTO. Earlier wins: 2nd prize at St. John's All India Debate on Democracy, 2nd prize in a "Just a Minute" extempore, and MUN awards at school and city level.</p>
+              <span class="tag">Debate</span><span class="tag">MUN</span><span class="tag">Extempore</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="kicker reveal">Projects</p>
+        <h2 class="reveal">Things I've <em>built &amp; made</em></h2>
+        <p class="hint reveal">Hover a card (or tap it) to flip it over.</p>
+
+        <div class="cards">
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="JS-Lab project card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-blue">
+                <span class="badge">JavaScript</span>
+                <h3>JS-Lab</h3>
+                <p>Hands-on JavaScript lab work: case studies and experiments, committed one step at a time.</p>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>What's inside</h4>
+                <p>A GitHub repo with 46 commits, organised into <b>Case Studies</b> and <b>Experiments</b> folders, plus the lab soft copy.</p>
+                <a class="btn small primary" href="https://github.com/bhumikaarorasit24/JS-Lab" target="_blank" rel="noopener">View repo <svg class="ic"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="GaN HEMT research and patent card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-lav">
+                <span class="badge">Research · Patent</span>
+                <h3>GaN HEMTs × AI</h3>
+                <p>Optimising transistor performance with AI techniques, from literature review to a filed patent.</p>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>The details</h4>
+                <p>Team-based research on <b>GaN HEMT</b> performance optimisation: literature review, experimentation and technical paper writing.</p>
+                <p class="small">Indian Patent Application No. 202521127292 A, filed 15 Dec 2025, published 2 Jan 2026.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Centelli internship card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-mint">
+                <span class="badge">Internship</span>
+                <h3>Centelli</h3>
+                <p>Lead Software Dev Intern at an AI automation company for business solutions.</p>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>At a glance</h4>
+                <p><b>6 weeks</b>, offline, on-site at Centelli Pvt Ltd, in a team that builds AI automation for business solutions.</p>
+                <a class="btn small primary" href="#journey">See the timeline <svg class="ic"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="More GitHub repositories card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-peach">
+                <span class="badge">GitHub</span>
+                <h3>Lab Notebook</h3>
+                <p>Coursework turned into code: ML, DBMS, problem solving and a hackathon-week build.</p>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>More repos</h4>
+                <p class="small">ML-lab · DBMS-Lab · PPS-LAB · MES · Hack-O-Week_Sem4 (JavaScript)</p>
+                <a class="btn small primary" href="https://github.com/bhumikaarorasit24?tab=repositories" target="_blank" rel="noopener">Browse all <svg class="ic"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="Second Last Draft writing page card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-blue">
+                <span class="badge">Writing</span>
+                <h3>Second Last Draft</h3>
+                <p>An Instagram page where my original writing lives.</p>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>Read along</h4>
+                <p>Short pieces, original words, one draft before the final one. Come say hi.</p>
+                <a class="btn small primary" href="https://www.instagram.com/secondlastdraft/" target="_blank" rel="noopener">@secondlastdraft <svg class="ic"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="flip reveal" tabindex="0" role="button" aria-pressed="false" aria-label="My book in progress card. Press Enter to flip.">
+            <div class="flip-inner">
+              <div class="face front f-photo">
+                <img src="assets/img/book-draft.jpg" alt="" loading="lazy">
+                <div class="photo-shade"></div>
+                <span class="badge">In progress</span>
+                <h3>The Book</h3>
+                <span class="flip-cue">flip ↻</span>
+              </div>
+              <div class="face back">
+                <h4>Draft 1</h4>
+                <p>My first book is being written on the side, and the goal is to publish it. Printed pages, blue pen, lots of rewrites.</p>
+                <a class="btn small primary" href="#writing">More on writing <svg class="ic"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <div class="wrap">
+        <p class="kicker reveal">Skills</p>
+        <h2 class="reveal">What I <em>bring along</em></h2>
+
+        <div class="skill-groups">
+          <div class="skill-group reveal" data-tilt>
+            <h3>Tech</h3>
+            <div class="chips">
+              <span class="skill">Machine Learning</span><span class="skill">Data Analysis</span><span class="skill">Python</span>
+              <span class="skill">C</span><span class="skill">Java</span><span class="skill">JavaScript</span><span class="skill">Data Structures</span>
+            </div>
+          </div>
+          <div class="skill-group reveal" data-tilt>
+            <h3>Thinking</h3>
+            <div class="chips">
+              <span class="skill">Critical Thinking</span><span class="skill">Problem Resolution</span><span class="skill">Technical Writing</span>
+            </div>
+          </div>
+          <div class="skill-group reveal" data-tilt>
+            <h3>People</h3>
+            <div class="chips">
+              <span class="skill">Leadership</span><span class="skill">Team Collaboration</span><span class="skill">Project Management</span><span class="skill">Communication</span>
+            </div>
+          </div>
+          <div class="skill-group reveal" data-tilt>
+            <h3>Creative</h3>
+            <div class="chips">
+              <span class="skill">Writing</span><span class="skill">Debate &amp; Public Speaking</span><span class="skill">Kathak</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="sub reveal">Honours &amp; awards</h3>
+        <ul class="awards">
+          <li class="reveal"><span class="medal">★</span><div><b>All India Rank 17</b> · National French Olympiad<small>Award of Excellence from Alliance Française, recognised by the French Ministry of Education</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>State Topper in English</b><small>National English Olympiad</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>Top performer</b> · Communication Skills &amp; Group Discussion<small>Among a batch of 300+ students</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>Academic Excellence Award in Science</b><small>For consistently topping school exams in Science</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>National Mathematics Olympiad</b><small>School topper</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>Content Writer</b> · "Smashing Patriarchy" initiative<small>Written content promoting gender equality and social awareness</small></div></li>
+          <li class="reveal"><span class="medal">★</span><div><b>Kathak</b> · Pracheen Kala Kendra<small>Prarambhik certification after 4 years of Indian classical dance</small></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section" id="writing">
+      <div class="wrap writing-grid">
+        <div class="writing-copy">
+          <p class="kicker reveal">Writing</p>
+          <h2 class="reveal">The <em>second-last</em> draft<br>is where the truth is.</h2>
+          <p class="reveal">
+            Writing is my favourite hobby and the part of me that doesn't fit on a CV.
+            I share original pieces on Instagram, and I'm writing a book on the side that I hope to publish one day.
+          </p>
+          <div class="reveal write-actions">
+            <a class="btn primary magnetic" href="https://www.instagram.com/secondlastdraft/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-instagram"/></svg> @secondlastdraft</a>
+          </div>
+          <p class="note reveal">Currently: Draft 1 ✎</p>
+        </div>
+        <div class="writing-visual reveal">
+          <figure class="stack s1"><img src="assets/img/book-draft.jpg" alt="Laptop showing a title page reading Book Title, Draft 1, next to printed manuscript pages and a blue pen" loading="lazy" width="900" height="1600"></figure>
+          <figure class="stack s2"><img src="assets/img/literacy-poster.jpg" alt="Poster for Lit-era-cy: Writing My Next Era, a World Literacy Day event at SIT Nagpur" loading="lazy" width="1016" height="1600"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section alt" id="gallery">
+      <div class="wrap">
+        <p class="kicker reveal">Gallery</p>
+        <h2 class="reveal">Moments &amp; <em>places</em></h2>
+
+        <div class="filters reveal" role="group" aria-label="Filter gallery">
+          <button type="button" class="filter is-active" data-filter="all">All</button>
+          <button type="button" class="filter" data-filter="leadership">Leadership</button>
+          <button type="button" class="filter" data-filter="stage">Stage &amp; Words</button>
+          <button type="button" class="filter" data-filter="work">Work</button>
+          <button type="button" class="filter" data-filter="campus">Campus</button>
+        </div>
+
+        <div class="gallery" id="gallery-grid">
+          <figure class="g-item reveal" data-cat="stage">
+            <button type="button" class="g-btn" aria-label="Open photo: On stage, mic in hand"><img src="assets/img/stage.jpg" alt="Bhumika speaking on stage with a microphone" loading="lazy" width="1530" height="1600"></button>
+            <figcaption>On stage, mic in hand</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="leadership">
+            <button type="button" class="g-btn" aria-label="Open photo: Student Ambassador at ICSIT 2026"><img src="assets/img/icsit.jpg" alt="Bhumika as Student Ambassador at ICSIT 2026" loading="lazy" width="1200" height="1600"></button>
+            <figcaption>Student Ambassador, ICSIT 2026</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="stage">
+            <button type="button" class="g-btn" aria-label="Open photo: INFACTO Order and Chaos debate"><img src="assets/img/infacto.jpg" alt="INFACTO Order and Chaos debate booklet and name card on a desk with a pen" loading="lazy" width="900" height="1600"></button>
+            <figcaption>INFACTO: Order &amp; Chaos, IIIT Nagpur</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="work">
+            <button type="button" class="g-btn" aria-label="Open photo: Internship days at Centelli"><img src="assets/img/centelli.jpg" alt="Bhumika wearing a Centelli lanyard, smiling" loading="lazy" width="1600" height="1200"></button>
+            <figcaption>Internship days at Centelli</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="stage">
+            <button type="button" class="g-btn" aria-label="Open photo: Lit-era-cy poster"><img src="assets/img/literacy-poster.jpg" alt="Lit-era-cy: Writing My Next Era event poster" loading="lazy" width="1016" height="1600"></button>
+            <figcaption>Lit-era-cy: an event I coordinated</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="campus">
+            <button type="button" class="g-btn" aria-label="Open photo: Campus amphitheatre"><img src="assets/img/campus-amphitheatre.jpg" alt="View of the campus amphitheatre from above, with green lawns and a blue sky" loading="lazy" width="900" height="1600"></button>
+            <figcaption>The amphitheatre from above</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="leadership">
+            <button type="button" class="g-btn" aria-label="Open photo: SRC council badge"><img src="assets/img/src-badge.jpg" alt="Student Representative Council badge: Bhumika Arora, Lead, Communication and Media Cell" loading="lazy" width="1154" height="465"></button>
+            <figcaption>Lead, Communication &amp; Media Cell</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="stage">
+            <button type="button" class="g-btn" aria-label="Open photo: The book, Draft 1"><img src="assets/img/book-draft.jpg" alt="Manuscript pages, a blue pen and a laptop showing Draft 1" loading="lazy" width="900" height="1600"></button>
+            <figcaption>The book, Draft 1</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="campus">
+            <button type="button" class="g-btn" aria-label="Open photo: Campus at dusk"><img src="assets/img/campus-dusk.jpg" alt="Campus at dusk with an orange glow on the horizon, street lamps and green shrubs" loading="lazy" width="1170" height="1560"></button>
+            <figcaption>Campus at dusk</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="work">
+            <button type="button" class="g-btn" aria-label="Open photo: Lanyard on, heading out"><img src="assets/img/selfie-mirror.jpg" alt="Mirror selfie of Bhumika in a dark green shirt with a lanyard" loading="lazy" width="637" height="1105"></button>
+            <figcaption>Lanyard on</figcaption>
+          </figure>
+          <figure class="g-item reveal" data-cat="leadership">
+            <button type="button" class="g-btn" aria-label="Open photo: Top performer, Group Discussion"><img src="assets/img/gd-top-performer.jpg" alt="Bhumika Arora, listed as a 2nd year top performer in Group Discussion" loading="lazy" width="501" height="629"></button>
+            <figcaption>Top performer, Group Discussion</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy">
+          <p class="kicker reveal">Contact</p>
+          <h2 class="reveal">Let's <em>talk.</em></h2>
+          <p class="reveal">Internship, collaboration, a debate, a draft you want a second pair of eyes on: my inbox is open.</p>
+          <ul class="contact-list reveal">
+            <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:abhumika24@gmail.com">abhumika24@gmail.com</a></li>
+            <li><svg class="ic"><use href="#i-linkedin"/></svg><a href="https://www.linkedin.com/in/bhumika-arora-0b7978320/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><svg class="ic"><use href="#i-github"/></svg><a href="https://github.com/bhumikaarorasit24" target="_blank" rel="noopener">GitHub</a></li>
+            <li><svg class="ic"><use href="#i-instagram"/></svg><a href="https://www.instagram.com/secondlastdraft/" target="_blank" rel="noopener">@secondlastdraft</a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" action="https://formsubmit.co/abhumika24@gmail.com" method="POST" novalidate>
+          <label class="field">
+            <span>Your name</span>
+            <input type="text" name="name" autocomplete="name" required minlength="2" placeholder="Jane Doe">
+          </label>
+          <label class="field">
+            <span>Your email</span>
+            <input type="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+          </label>
+          <label class="field">
+            <span>Message</span>
+            <textarea name="message" rows="5" required minlength="10" placeholder="What's on your mind?"></textarea>
+          </label>
+
+          <!-- spam trap + FormSubmit options -->
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <input type="hidden" name="_subject" value="New message from your portfolio site">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <button class="btn primary submit" type="submit"><span class="btn-label">Send message</span> <svg class="ic"><use href="#i-arrow"/></svg></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Designed &amp; built by Bhumika Arora · <span id="year">2026</span></p>
+    <p class="tiny">Made with a lot of light blue ☁️</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="lb-close" type="button" aria-label="Close">✕</button>
+    <button class="lb-nav prev" type="button" aria-label="Previous photo">‹</button>
+    <figure class="lb-fig">
+      <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav next" type="button" aria-label="Next photo">›</button>
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
